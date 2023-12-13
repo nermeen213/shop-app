@@ -53,10 +53,10 @@ body {
 }
 .newNav {
  
- 
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px !important;
   
    z-index: 999999;
-  top :80% !important;
+  top :85% !important;
   position: fixed !important;
   
    width: fit-content;
@@ -183,6 +183,8 @@ width: 280px !important;
 .pa {
   width: fit-content !important;
   position: fixed !important;
+  bottom: 5% !important;
+  z-index: 99999999;
  
 }
 .pa a {
@@ -266,7 +268,11 @@ footer {
   }
  }
  @media (max-width: 767.98px) {
+  .pa {
+    bottom: 15% !important;
+  }
   .contact {
+    
     width: 40% !important;
     padding-bottom: 10px;
   }
