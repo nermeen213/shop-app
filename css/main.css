@@ -1,0 +1,285 @@
+ * {
+    box-sizing: border-box;
+    margin: 0;
+    font-family:'Lora', serif;
+    list-style: none;
+    text-decoration: none !important;
+   
+ }
+body {
+  background-color: var(--body-color);
+}
+ :root {
+  --body-color: #fff;
+   --main-color: #BDC4D1;
+   --text-color:#000000ce;
+   
+   --text2-color:var(--main-color);
+ }
+
+ .dark-theme {
+  --main-color :#1A1D29;
+  --text-color:#fff;
+  --body-color:#252A38;
+}
+
+ 
+
+ /************************************* Navbar********************************** */
+#home {
+  min-height: 100vh;
+ background-color: var(--main-color) !important;
+ overflow: hidden !important;
+ padding: 70px 20px;
+ color: var(--text-color);
+ 
+}
+.navbar {
+  background-color: var(--main-color);
+  
+}
+.navbar a {
+  color: var(--text-color);;
+}
+ .nav-link {
+  font-family: var(--font-family);
+ 
+  font-size: 17px !important;
+  color: var(--text-color) !important;
+}
+.navbar i {
+  color: var(--text-color) !important;
+  font-size: 20px;
+}
+.newNav {
+ 
+ 
+  
+   z-index: 999999;
+  top :80% !important;
+  position: fixed !important;
+  
+   width: fit-content;
+   left: 50%;
+   transform: translateX(-50%);
+   display: none;
+  background-color: var(--body-color) !important;
+ 
+}
+
+.navbar-toggler {
+  border: none !important;
+ 
+}
+.newNav i {
+  color: dimgrey;
+}
+.active {
+  position: relative;
+  color: var(--text-color) !important;
+
+}
+.navbar-nav .nav-link.active::after {
+  content: '';
+  width: 100%;
+  height: 1.5px;
+  position: absolute;
+  background-color: var(--text-color);
+  left: 0;
+  top: 50%;
+ 
+  transition: .5s;
+
+ 
+  border-radius: 5%;
+
+ 
+}
+
+ /************************************* Navbar********************************** */
+ /************************************* Home page*********************************/
+ .homeImg {
+ width: 330px !important;
+ 
+ 
+  
+ }
+ .box {
+  right: 45%;
+ }
+ .homeImg2 {
+ 
+ width: 250px;
+ }
+ 
+ .mainTitle {
+  font-size: 70px;
+  font-weight: 300;
+ 
+ }
+ .fit {
+  width: fit-content !important;
+  padding-left: 100px !important;
+ 
+ 
+ }
+ /************************************* Home page*********************************/
+ /************************************* New page*********************************/
+ #new {
+ 
+  padding: 50px 50px;
+  color: var(--text-color);
+}
+#new h3 {
+  font-size: 19px !important;
+}
+ p ,  i {
+  font-size: 15px;
+  transition: 1s;
+}
+ .card-fo:hover i {
+ 
+  transform: translatex(10px);
+}
+
+
+
+ /************************************* collection page*********************************/
+
+ #collection {
+  padding: 100px 0px;
+  background-color: var(--main-color);
+  color: var(--text-color);
+ }
+
+ 
+.image {
+  width: 25%;
+}
+
+  /************************************* best collection*********************************/
+#best-collection {
+  padding: 70px 20px;
+  color: var(--text-color);
+}
+#best-collection .item {
+  
+  width: 80% !important;
+ 
+  
+}
+#best-collection img {
+  width: 100%;
+}
+#best-collection span {
+ font-size: 15px;
+} 
+.owl-item {
+display: flex;
+justify-content: center;
+width: 280px !important;
+
+}
+.pa {
+  width: fit-content !important;
+  position: fixed !important;
+ 
+}
+.pa a {
+  color: var(--text-color) !important;
+}
+.iconn {
+  background-color: rgba(0, 0, 0, 0.123);
+  margin: 0 5px;
+  border-radius: 10%;
+}
+
+  /************************************* best collection*********************************/
+
+#brand {
+  padding: 60px 20px;
+  color: var(--text-color);
+}
+.bottom {
+  padding-top: 50px;
+}
+.brandimg {
+  width: 25%;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}
+.contact {
+  width: 18%;
+}
+.contact1 {
+width: 25%;
+}
+#footer {
+  color: var(--text-color) !important;
+}
+
+#footer a {
+
+  color: var(--text-color) !important;
+  font-weight: 400px;
+}
+
+footer {
+  color: var(--text-color);
+  font-weight: 500;
+}
+
+
+
+
+
+
+
+
+
+ /* media query */
+
+ 
+ @media (max-width: 991.98px) {
+  .fit {
+    
+    padding-left: 0 !important;
+   
+   
+   }
+   .nav-link {
+    font-size: 14px !important;
+   }
+   .mainTitle {
+    font-size: 50px;
+  }
+  .newNav {
+    display: block !important;
+  }
+  .brandimg {
+    width: 45%;
+   
+  }
+  .brandimg img {
+    width: 100%;
+  }
+ }
+ @media (max-width: 767.98px) {
+  .contact {
+    width: 40% !important;
+    padding-bottom: 10px;
+  }
+  .contact1 {
+  width: 100% !important;
+  padding-bottom: 10px;
+  }
+.container-1 {
+  padding: 50px 20px;
+  padding-bottom: 150px;
+ }
+ .image {
+  width: 50%;
+}
+
+ }
