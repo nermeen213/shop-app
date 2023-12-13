@@ -61,6 +61,7 @@ body {
   
    width: fit-content;
    left: 50%;
+  
    transform: translateX(-50%);
    display: none;
   background-color: var(--body-color) !important;
@@ -268,9 +269,7 @@ footer {
   }
  }
  @media (max-width: 767.98px) {
-  .pa {
-    bottom: 15% !important;
-  }
+  
   .contact {
     
     width: 40% !important;
